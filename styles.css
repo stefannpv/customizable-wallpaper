@@ -1,35 +1,46 @@
-body,html {
+html,body {
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
   background-color: black;
+  overflow: 0;
+  overflow-x: hidden;
+}
 
+
+#hero{
+	height: 100%;
+}
+
+.text{
+	padding-top: 2em;
+	margin-left: 10em;
+	margin-bottom: 5em;
+}
+
+.divButtons{
+	margin-left: 10em;
+	display: block;
 }
 
 h1{
-	position: center;
-	margin-left: 10rem;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top:3rem;
-	font-size: 6rem;
+	font-size: 6em;
 	color: #DDDDDD;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 h2{
-	margin-left: 10rem;
-	font-size: 3rem;
-	margin-bottom: 10rem;
+	font-size: 3em;
 	color: #DDDDDD;
 }
 
 button{
-	width: 10%;
-	height: 3rem;
-	font-size: 1.5rem;
 	display: block;
-	margin-left: 3rem;
+	width: 10em;
+	height: 3em;
+	font-size: 1.5rem;
 	margin-top: 2rem;
 	background-color: #567189;
 	color: #DDDDDD;
@@ -49,9 +60,9 @@ button:hover{
 }
 
 	.hero1{
-		background-image: url(images/1.jpg);
-		height: 100%;
-	  width: 100%;
+	background-image: url(images/1.jpg);
+	height: 100%;
+	width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,9 +70,9 @@ button:hover{
 	}
 
 	.hero2{
-		background-image: url(images/2.jpg);
-		height: 100%;
-	  width: 100%;
+	background-image: url(images/2.jpg);
+	height: 100%;
+	width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,11 +80,42 @@ button:hover{
 	}
 
 	.hero3{
-		background-image: url(images/3.jpg);
-		height: 100%;
-	  width: 100%;
+	background-image: url(images/3.jpg);
+	height: 100%;
+	width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+	}
+
+	@media only screen and (max-width: 1440px) {
+
+
+		.text{
+			margin-left: 2em;
+			margin-bottom: 2em;
+		}
+		
+		.divButtons{
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			margin-left: 1em;
+		}
+
+		h1{
+			font-size: 2em;
+		}
+
+		h2{
+			font-size: 1.5em;
+		}
+
+		button{
+			width: 6em;
+			height: 3em;
+			font-size: 0.75em;
+			margin-top: 1em;
+		}
 	}
